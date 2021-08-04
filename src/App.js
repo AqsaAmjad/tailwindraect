@@ -6,29 +6,31 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaMobileAlt } from "react-icons/fa";
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
 function App() {
   return (
     <div className="App">
       <div className="relative">
-        <header className="px-32 pt-8 x-data={ mobileMenuOpen : false } flex flex-wrap flex-row justify-between md:items-center md:space-x-4 bg-white py-6 px-6 ">
-            <div className="bg-auto bg-center">
-            <img src={require ('./images/imagesfigma/header.jpg').default} /></div>
+        
+        <header className="lg:px-32 lg:pt-8  lg:flex flex-wrap flex-row justify-between lg:items-center lg:space-x-4 bg-white py-6 px-6 ">
+        <div class="lg:w-full lg:bg-center lg:bg-cover lg:bg-fixed">
+            <img className="lg:bg-cover" src={require ('./images/imagesfigma/header.jpg').default} /></div>
             <div className="absolute pt-10 px-30 top-10">
                 < div className="flex flex-row px-20 ml-28"> 
-                <button class="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
+                <button class="flex lg:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
   <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
 </svg>
   </button>   
-        <nav className=" absolute md:relative top-16 left-0 md:top-0 z-20 flex flex-row space-x-4 text-xs text-gray-100 font-thin">
-                    <a href="#">Home</a>
-                    <a href="#">Product</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
+        <nav className="hidden -mx-4 lg:flex lg:items-center top-16 left-0 sm: top-0 z-20 flex flex-row space-x-4 text-xs text-gray-100 font-thin">
+                    <a href="#"class="block mx-4 mt-2 text-sm text-gray-700 capitalize">Home</a>
+                    <a href="#"class="block mx-4 mt-2 text-sm text-gray-700 capitalize">Product</a>
+                    <a href="#"class="block mx-4 mt-2 text-sm text-gray-700 capitalize">Pricing</a>
+                    <a href="#"class="block mx-4 mt-2 text-sm text-gray-700 capitalize">About</a>
+                    <a href="#"class="block mx-4 mt-2 text-sm text-gray-700 capitalize">Contact</a>
                 </nav>
-                <img src={require ('./images/imagesfigma/R4.png').default} className="h-10 ml-8 -mt-3 w-30" />
+                <img src={require ('./images/imagesfigma/R4.png').default} className="static h-10 ml-8 -mt-3 w-30 " />
                 <div className="flex flex-row justify-center ml-40 -mt-2 space-x-4">
                     <FaTwitter className="h-10 text-white"/>
                     <FaFacebookSquare className="h-10 text-white"/>
@@ -36,10 +38,10 @@ function App() {
                 </div>
             </div>
             <div className="">
-            <h1 className="mt-20 font-sans text-4xl font-bold text-white w-80 ml-80">The best products start with Figma</h1>
-            <h4 className="mt-5 text-center text-gray-300 px-5 ml-64 w-3/6 m-auto">Most calenders are designed for teams.Slate is designed for freelancers</h4>
-            <div className="flex justify-center mt-10 ml-20">
-                <button class="bg-blue-500  text-white text-xs py-2 px-8 rounded-full ml-12 mt-10">
+            <h1 className="lg:mt-20 font-sans lg:text-4xl font-bold text-white lg:w-80 lg:ml-80">The best products start with Figma</h1>
+            <h4 className="lg:mt-5 text-center text-gray-300 lg:px-5 lg:ml-64 lg:w-3/6 lg:m-auto">Most calenders are designed for teams.Slate is designed for freelancers</h4>
+            <div className="flex justify-center lg:mt-10 lg:ml-20">
+                <button class="bg-blue-500  text-white text-xs lg:py-2 lg:px-8 lg:rounded-full lg:ml-12 lg:mt-10">
                 Try For Free
                 </button>
                 </div>
@@ -49,16 +51,16 @@ function App() {
     </header>
 </div>
 <div>
-<h2 className=" lg:hidden sm:mt-20 text-3xl font-bold text-center">Features</h2>
-    <h4 className=" lg:hidden sm:mt-5 text-center text-gray-800">Most calenders are designd for teams.</h4>
-<div className=" lg:hidden sm:ml-80">
-    <iframe width="700" height="315" src="https://www.youtube.com/embed/0L8cQ9nRtuE"frameborder="rounded-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 className=" lg:hidden sm:mt-20 text-2xl font-semibold -ml-20">Features</h2>
+    <h4 className=" lg:hidden sm: text-sm ml-16 mt-3 text-gray-800 w-40">Most calenders are designd for teams.</h4>
+<div className=" lg:hidden sm: ml-8 rounded-full mt-3">
+    <iframe width="250" height="190" src="https://www.youtube.com/embed/0L8cQ9nRtuE"frameborder="rounded-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
     <h2 className="mt-20 text-3xl font-bold text-center">Features</h2>
     <h4 className="mt-5 text-center text-gray-800">Most calenders are designd for teams.</h4>
     <h4 className="text-center text-gray-800">Slate is designed for freelancers.</h4>
 </div>
-<div className="grid justify-center w-2/3 grid-cols-3 mx-auto">
+<div className="grid justify-center w-2/3 lg:grid-cols-3 mx-auto">
     <div className="p-5 mt-10">
         <img class="ml-28 -mb-10 w-6 h-6" src={require ('./images/imagesfigma/v.png').default}/>
         <h3 className="p-10 mt-5 text-sm font-bold text-center justify-content-center">OpenType features Variables fonts</h3>
@@ -69,7 +71,7 @@ function App() {
         </p>
     </div>
     <div className="p-5 mt-6">
-        <img className="w-6 h-6 -mb-5 ml-28" src={require ('./images/imagesfigma/v2.png').default}/>
+        <img className="sm: -mt-16 w-6 h-6 -mb-5 ml-28" src={require ('./images/imagesfigma/v2.png').default}/>
         <h3 className="p-10 ml-5 text-sm font-bold">Design with real data</h3>
         <p className="p-10 -mt-16 text-sm leading-tight text-center text-gray-600 justify-content-center">Slate helps you see how
             many more days you need
@@ -78,8 +80,8 @@ function App() {
         </p>
     </div>
     <div className="p-5 mt-12">
-        <img className="w-6 h-6 -mb-20 ml-28" src={require ('./images/imagesfigma/v1.png').default}/>
-        <h3 className="p-20 mt-4 text-sm font-bold">Fastest way to take action</h3>
+        <img className="sm: -mt-16 w-6 h-6 -mb-20 ml-28" src={require ('./images/imagesfigma/v1.png').default}/>
+        <h3 className="sm: w-64 p-20 mt-4 text-sm font-bold">Fastest way to take action</h3>
         <p className="p-10 text-sm leading-tight text-center text-gray-600 -mt-28 justify-content-center" >Slates help you see how many more days you need to work to reach your financial goals.</p>
     </div>
 </div>
@@ -87,7 +89,7 @@ function App() {
     <iframe width="700" height="315" src="https://www.youtube.com/embed/0L8cQ9nRtuE"frameborder="rounded-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <div>
-    <div className="grid grid-cols-2 mt-40">
+    <div className="grid lg:grid-cols-2 mt-40">
         <div className="mt-0 ml-60 w-60">
             <h2 class=" text-3xl font-small ml-20 w-60">Fastest way to organize</h2>
             <h4 className="pr-10 mt-5 ml-20 text-gray-800 w-80 font-small"> Most calendars are designed for teams.  Slate is designed for freelancers</h4>
@@ -100,7 +102,7 @@ function App() {
     Try For Free
     </button>
 </div>
-<div className="grid grid-cols-2 mt-40">
+<div className="grid lg:grid-cols-2 mt-40">
     <img className="ml-72 w-50 w-100 h-60" src={require ('./images/imagesfigma/t.png').default}/>
     <div className="ml-10">
         <h3 className="text-xs font-black -ml-96">At your finger tips</h3>
@@ -115,8 +117,11 @@ function App() {
     <h2 className="mt-20 text-4xl text-black text-opacity-80">Partners</h2>
     <h4 className="mt-5 text-center text-gray-700">Most calenders are designd for teams.</h4>
     <h4 className="text-center text-gray-700">Slate is designed for freelancers.</h4>
-    <div className="flex justify-center ">
-        <img className="p-8 mt-10 w-82 h-60" src={require ('./images/imagesfigma/item.png').default}  />
+    <div className="sm: hidden lg:flex justify-center ">
+    <img className="p-8 mt-10 w-82 h-60" src={require ('./images/imagesfigma/item.png').default} /> 
+    </div>
+    <div>
+    <img className="h-32 w-60 ml-8" src={require ('./images/imagesfigma/sm.png').default} /> 
     </div>
     <div className="flex justify-center">
         <button class="bg-blue-500  text-white text-xs font-bold py-2 px-8 rounded-full mt-5">
@@ -143,7 +148,7 @@ function App() {
     More Testimonials
     </button>
 </div>
-<div className="mt-10 text-center bg-gray-700">
+<div className="lg:mt-10 text-center bg-gray-700 sm:flex-shrink-0">
     <h2 className="pt-10 text-4xl text-white">Pricing</h2>
     <h4 className="mt-5 text-center text-white ">Most calenders are designd for teams.</h4>
     <h4 className="text-center text-white">Slate is designed for freelancers.</h4>
@@ -222,7 +227,7 @@ function App() {
 <h4 className="mt-5 text-center text-opacity-50 ">Most calenders are designd for teams.</h4>
 <h4 className="text-center text-opacity-50">Slate is designed for freelancers.</h4>
 <div>
-    <div className="grid grid-cols-2">
+    <div className="grid lg:grid-cols-2">
         <div className="p-5 mt-10 border-2 border-gray-100 rounded shadow-lg max-h-96 w-60 ml-80">
             <h4 className="ml-16 text-sm font-bold">Contact Us</h4>
             <input type='text' placeholder="Your Name" class=" placeholder-gray-600 bg-gray-200 text-xs mt-4 px-2 py-4 border rounded-full text-black-200 h-0 w-48 ml-2" />
@@ -245,7 +250,7 @@ function App() {
                 <Icon icon="mail" className="w-5 mb-3 ml-12 text-blue-400 h-15"/>
                 willie.jenning@example
             </h5>
-            <img className="h-48 mt-24 -ml-96 w-82 mt-28" src={require ('./images/imagesfigma/map.png').default}  />
+            <img className="visible-lg-block h-48 mt-24 -ml-96 w-82 mt-28" src={require ('./images/imagesfigma/map.png').default}  />
         </div>
     </div>
 </div>
