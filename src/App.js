@@ -15,7 +15,7 @@ function App() {
         
         <header className="lg:px-32 lg:pt-8  lg:flex flex-wrap flex-row justify-between lg:items-center lg:space-x-4 bg-white py-6 px-6 ">
         <div class="lg:w-full lg:bg-center lg:bg-cover lg:bg-fixed">
-            <img className="lg:bg-cover sm: h-96 sm: w-96 sm: backdrop-filter backdrop-blur-none" src={require ('./images/imagesfigma/header.jpg').default} /></div>
+            <img className="bg-cover  h-96  w-96 sm: backdrop-filter sm: backdrop-blur-none" src={require ('./images/imagesfigma/header.jpg').default} /></div>
             <div className="absolute pt-10 px-30 top-10">
                 < div className="lg:flex flex-row px-20 ml-28"> 
     
